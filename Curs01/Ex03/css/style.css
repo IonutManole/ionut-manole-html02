@@ -1,0 +1,14 @@
+/* Folosind un media query in CSS centreaza elementul
+pentru toate rezolutiile in afara de cele mai mari de 992
+unde imaginea trebuie sa se intinda pe toata lungimea
+ecranului */
+body {
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+}
