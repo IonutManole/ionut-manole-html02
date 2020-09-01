@@ -1,0 +1,23 @@
+// Creeaza un mixin care sub rezolutiile de 500px sa ascunda casuta 2
+@mixin mq-sm-down {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+// Creeaza un mixin care peste rezolutiile de 501px sa coloreze casuta 2 verde
+@mixin mq-sm-up {
+  @media (min-width: 501px) {
+    @content;
+  }
+}
+
+.box-2 {
+  @include mq-sm-down() {
+    display: none;
+  }
+
+  @include mq-sm-up() {
+    background-color: green;
+  }
+}
