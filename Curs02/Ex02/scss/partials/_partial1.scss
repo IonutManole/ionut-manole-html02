@@ -1,0 +1,6 @@
+// Creaza in fisierul _partial1.scss o clasa brand care sa seteze culoarea
+// brand-main pentru background si brand-neutral pentru text
+.brand {
+  color: $brand-neutral;
+  background-color: $brand-main;
+}
