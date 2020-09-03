@@ -1,0 +1,52 @@
+// Creaza un mixin care sa poata genera CSS pentru clase ce vor fi aplicate
+// pentru a randa elemente patrate, cercuri sau romburi
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin shape($shape: 'square') {
+  display: inline-block;
+  border: 1px solid #000;
+
+  @if $shape == 'square' {
+  } @else if $shape == 'circle' {
+    border-radius: 50%;
+  } @else {
+    transform: rotate(45deg) skew(10deg, 10deg);
+  }
+}
+
+.square {
+  @include shape('square');
+  @include size(20px, 20px);
+}
+
+.circle {
+  @include shape('circle');
+  @include size(20px, 20px);
+}
+
+.rhombus {
+  @include shape('rhombus');
+  @include size(20px, 20px);
+}
+// Creaza  un mixin care sa poata fi aplicat pe butoane pentru a genera
+// sageti de tip next/previous/up/down
+@mixin btn-dir($direction: 'left') {
+  width: 0;
+  height: 0;
+  content: '';
+
+  @if $direction == 'left' {
+    border-top: 3px solid transparent;
+    border-right: 6px solid #000;
+    border-bottom: 3px solid transparent;
+  }
+}
+
+.button-left {
+  &::before {
+    @include btn-dir('left');
+  }
+}
