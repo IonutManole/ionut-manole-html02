@@ -50,4 +50,44 @@
   border-width: 10px;
 }
 
+.box-100 {
+  border-style: dotted;
+}
+
+.box-200 {
+  background-color: gray;
+}
+
+.box-300 {
+  border-style: dotted;
+}
+
+.box-400 {
+  background-color: gray;
+}
+
+.box-500 {
+  border-style: dotted;
+}
+
+.box-600 {
+  background-color: gray;
+}
+
+.box-700 {
+  border-style: dotted;
+}
+
+.box-800 {
+  background-color: gray;
+}
+
+.box-900 {
+  border-style: dotted;
+}
+
+.box-1000 {
+  background-color: gray;
+}
+
 /*# sourceMappingURL=style.css.map */
