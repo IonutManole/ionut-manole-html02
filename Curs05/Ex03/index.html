@@ -17,17 +17,18 @@
   >
 </head>
 <body>
-
+  <!-- Ordoneaza primul rand astfel incat ordinea cuvintelor sa fie corecta -->
   <div class="container">
     <div class="row">
-      <div class="col">Last</div>
+      <div class="col order-last">Last</div>
       <div class="col">Second</div>
-      <div class="col">First</div>
+      <div class="col order-first">First</div>
     </div>
   </div>
 
+  <!-- Ordoneaza al doilea rand astfel incat ordinea numerelor sa fie corecta -->
   <div class="container">
-    <div class="row">
+    <div class="row d-flex flex-row-reverse">
       <div class="col">5</div>
       <div class="col">4</div>
       <div class="col">3</div>
@@ -36,8 +37,9 @@
     </div>
   </div>
 
+  <!-- Ordoneaza al treilea rand astfel incat ordinea numerelor sa fie inversa -->
   <div class="container">
-    <div class="row">
+    <div class="row d-flex flex-row-reverse">
       <div class="col">10</div>
       <div class="col">20</div>
       <div class="col">30</div>
